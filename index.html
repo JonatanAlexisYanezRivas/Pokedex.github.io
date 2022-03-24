@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Launchx</title>
+    <link rel="stylesheet" href="pokedex.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="Pokedex">
+
+        <div class="containerPokedex">
+
+            <div class="circleBlue"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="centroPokedex">
+           
+                <div class="imgPokemon">
+                    <img src="assets/bx-menu.svg" class="menu">
+                    <div class="circleRed"></div>
+                    <div class="circleRed1"></div>
+                    <div class="circleRed2"></div>
+                    <img src="assets/pokeball.png" id="pokeImg" class="imagen"/>
+                    <ul id="tipo" class="tipos"></ul>
+                </div>
+
+                <div class="datosPokemon">
+                    <ul id="estadisticas" class="estadisticas"></ul>
+                    <div class="separar"></div>
+                    <ul id="movimientos" class="movimientos"></ul>
+                </div>
+                <div class="diseñocss"> 
+                    <div class="pokedex-controls-button" onclick="fetchPokemon()" id="btnBuscar"></div>
+                    <label class="textBuscar" for="btnBuscar">Buscar pokemon</label>
+                    <div class="pokedex-controls-longButton"></div>
+                    <div class="pokedex-controls-longButton2"></div>
+                    <div class="pokedex-pad-middle"></div>
+                    <div class="pokedex-pad-fall"></div>
+                </div>
+            </div>
+
+            <div class="containerInput">
+                <input type="text" placeholder="Ingresar pokemon" id="pokeName" name="pokeName" class="inputBuscar">
+                <!-- <button onclick="fetchPokemon()" class="btnBuscar">Cambiar <br> pokemon</button> -->
+            </div>
+
+            <div class="containerInformacion">
+                
+            </div>
+        </div>
+
+     
+       
+        
+    </section>
+    <script src="Pokedex.js"></script>
+</body>
+</html>
+
+

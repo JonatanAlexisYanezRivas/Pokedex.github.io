@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .pokedex{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.containerPokedex{
+    background-image: url(assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:30rem;
+    height: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    border-color: black;
+    border-style: solid;
+}
+
+.centroPokedex{
+    /* background-color: black; */
+    color: white;
+    padding: 2rem;
+}
+
+.imgPokemon{
+    /* background-color: white; */
+    
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    
+    margin-top: 5.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imagen{
+    width: 11rem;
+   
+    filter: drop-shadow( 0 0 15px red);
+}
+
+.containerInput{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    height: 12rem;
+    padding: 1rem;
+    border: none;
+    
+    color: white;
+}
+
+.containerInformacion{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 12rem;
+   
+    color: rgb(0, 0, 0);
+}
+
+.btnBuscar{
+    border: none;
+   background-color: rgb(0, 0, 0);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: white;
+
+    margin-top: 1rem;
+
+    
+}
+
+ul{
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inputBuscar{
+    border: none;
+    font-size: 2rem;
+    width: 18rem;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.btnBuscar:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    transition: ease-in 0.5s;
+}
+/* Tipos */
+.tipos{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+
+.color-grass{
+    background-color: #9bcc50;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-poison{
+    background-color: #b97fc9;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-fire{
+    background-color: #fd7d24;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-flying{
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc7ef;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-water{
+    background-color: #4592c4;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-electric{
+    background-color: #eed535;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-normal{
+    background-color: #a4acaf;
+    color: #212121;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-bug{
+    background-color: #729f3f;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-rock{
+    background-color: #a38c21;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-ground{
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-psychic{
+    background-color: #f366b9;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-steel{
+    background-color: #9eb7b8;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-ghost{
+    background-color: #7b62a3;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-dark{
+    background-color: #707070;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-fighting{
+    background-color: #d56723;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-fairy{
+    background-color: #fdb9e9;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-ice{
+    background-color: #51c4e7;
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.color-dragon{
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    color: #fff;
+
+    font-size: 1.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Stats */
+
+.estadisticas{  
+    margin-top: 0.5rem; 
+    column-count: 2;
+}
+
+.statItem{
+    padding: 0.5rem;
+    background-color: #faaa75;
+    margin: auto;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-style: oblique;
+    color: #212121;
+}
+
+.movimientos{
+    height: 200px;
+    width: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+
+    background: rgba(106, 141, 238, 0.25);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
